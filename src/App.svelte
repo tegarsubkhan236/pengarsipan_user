@@ -1,7 +1,8 @@
 <script>
 	import { Router, Link, Route } from "svelte-routing";
-	import Container from "./routes/Container.svelte";
+	import MainCollection from "./routes/MainCollection.svelte";
 	import Landing from "./routes/Landing.svelte";
+	import Detail from "./routes/Detail.svelte";
 
 	export let url = "";
 	// export let name;
@@ -9,6 +10,6 @@
 
 <Router {url}>
 	<Route path="/" component={Landing} />
-	<Route path="container" component={Container} />
-	<Route path="test" component={Landing} />
+	<Route path="main-collection" component={MainCollection} />
+	<Route path="detail" component={Detail} />
 </Router>
